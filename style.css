@@ -1,73 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;500;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
 body{
-    width: 960px;
-    height: 583px;
-    background: #E6E9F3;;
+    background: linear-gradient(to right, #9bc5c3, #6767A4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+nav{
+    height: 50px;
+    font-family: 'Rubik', sans-serif;
+}  
+
+nav ul{
+    padding: 6px 30px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    font-size: larger;
+}
+
+nav ul li{
+    padding: 8px;
+}
+
+.main{
+    display: flex;
+}
+.index-leftside{
+    width: 50%;
+    height: 100vh;
+    padding: 16rem 0 0 10rem;
 }
 
 .hello{
-color: #000;
-font-family: Inter;
-font-size: 64px;
-font-style: normal;
-font-weight: 900;
-line-height: normal;
-width: 242px;
-height: 68px;
+    color: #322F34;
+    font-size: 6rem;
+    font-family: 'Gasoek One', sans-serif;
+    font-weight: 300;
 }
 
-#element{
-width: 387px;
-height: 68px;
-color: #6767A4;
-font-family: Inter;
-font-size: 64px;
-font-style: normal;
-font-weight: 900;
-line-height: normal;
-}
+span{
+    color: #6767A4;
+    font-size: 8rem;
+    font-family: 'Gasoek One', sans-serif;
+    font-weight: bolder;}
 
-.text1{
-    color: #E6E9F3;
-    font-family: Inter;
+p{
     font-size: 20px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: normal;
-    width: 375px;
-    height: 52px;
 }
+.creative{
+    color: #6767A4;
+    font-size: 25px;
+}
+
+
+.index-rightside{
+    padding: 13rem 0 0 5rem;
+    width: 50%;
+    height: 100vh;
+}
+
 .container{
-    width: 861px;
-    height: 255px;
-    border-radius: 23px;
-    background: #6767A4;
+    background-color: #6767A4;
+    width: 40rem;
+    height: 20rem;
+    padding: 20px 30px;
+    border-radius: 25px;
+    box-shadow:  #322F34 30px 30px;
 }
 
-.playcharacter{
-    border-radius: 16px;
-    background: #BEE5BF;
-    width: 210px;
-    height: 76px;
-    flex-shrink: 0;
+.text1 {
+    font-family: 'Gasoek One', sans-serif;
+    font-weight: 300;
+    font-weight: bolder;
+    padding: 15px 0 30px 0;
     color: #322F34;
-    font-family: Inter;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: normal;
 }
 
-.traintechnically{
-    border-radius: 16px;
-    background: #BEE5BF;
-    width: 210px;
-    height: 76px;
-    flex-shrink: 0;
-    color: #322F34;
-    font-family: Inter;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: normal;
+a{
+    display: block;
+    padding: 1rem ;
+}
 
+a button{
+    color: #322F34;
+    padding: 0 1rem;
+    background-color: #f2f2f2;
+    height: 5rem;
+    width: 15rem;
+    font-size: x-large;
+    font-family: 'Gasoek One', sans-serif;
+    font-weight: 800;
+    text-align: left;
+    border-radius: 20px;
+}
+
+a button:hover{
+    background-color: #322F34;
+    color:#6767A4 ;
 }

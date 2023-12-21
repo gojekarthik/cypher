@@ -7,24 +7,37 @@
     <title>Home</title>
 </head>
 <body>
+<nav class="navbar">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a>How to Use</a></li>
+    </ul>
+</nav>
+<div class="main">
+<div class="index-leftside">
     <h1 class="hello">Hello!!</h1>
-
-    <span id="element">Dancers.</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true">|</span>
+    <span id="element">Dancers.</span><span class="typed-cursor" aria-hidden="true">|</span>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
        var typed = new Typed('#element', {
-       strings: ['Dancers.', 'Artists.','Movers.'],
+       strings: ['Artists', 'Movers','Dancers'],
         typeSpeed: 60,
        });
    </script>
+   <p>Ready to Unlock Your <span class="creative">Creative</span> Potential?</p>
+</div>
+<div class="index-rightside">
 <div class="container">
     <h1 class="text1">Choose How You Want To Train</h1>
     <a href="plotprompt.html">
         <button class="playcharacter">Play<br>Character</button>
     </a>
     <a href="technicalprompt.html">
-        <button class="traintechnically">Train with Technicality</button>
+        <button class="traintechnically">Train <br> Technically</button>
     </a>
+    </div>
+</div>
+</div>
 </div>
 </body>
 </html>

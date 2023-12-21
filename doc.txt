@@ -5,3 +5,6 @@
 #BEE5BF green
 
 #E6E9F3 whitish purple
+
+
+font-family: 'Gasoek One', sans-serif;
