@@ -1,0 +1,73 @@
+body{
+    width: 960px;
+    height: 583px;
+    background: #E6E9F3;;
+}
+
+.hello{
+color: #000;
+font-family: Inter;
+font-size: 64px;
+font-style: normal;
+font-weight: 900;
+line-height: normal;
+width: 242px;
+height: 68px;
+}
+
+#element{
+width: 387px;
+height: 68px;
+color: #6767A4;
+font-family: Inter;
+font-size: 64px;
+font-style: normal;
+font-weight: 900;
+line-height: normal;
+}
+
+.text1{
+    color: #E6E9F3;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    width: 375px;
+    height: 52px;
+}
+.container{
+    width: 861px;
+    height: 255px;
+    border-radius: 23px;
+    background: #6767A4;
+}
+
+.playcharacter{
+    border-radius: 16px;
+    background: #BEE5BF;
+    width: 210px;
+    height: 76px;
+    flex-shrink: 0;
+    color: #322F34;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.traintechnically{
+    border-radius: 16px;
+    background: #BEE5BF;
+    width: 210px;
+    height: 76px;
+    flex-shrink: 0;
+    color: #322F34;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+
+}
