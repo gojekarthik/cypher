@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Prompt Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+
+        .prompt-container {
+            margin-top: 50px;
+            font-size: 1.2em;
+        }
+
+        .generate-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Random Prompt Generator</h1>
+
+    <!-- Character Prompt Generator -->
+    <div class="prompt-container" id="bodypart-container"></div>
+    <button class="generate-button" onclick="generatePrompt('bodypart-container', BodyPartPrompts)">Random BodyPart</button>
+
+    <!-- Emotion Prompt Generator -->
+    <div class="prompt-container" id="shape-container"></div>
+    <button class="generate-button" onclick="generatePrompt('shape-container', ShapePrompts)">Random Shape</button>
+
+    <!-- Location Prompt Generator -->
+    <div class="prompt-container" id="levels-container"></div>
+    <button class="generate-button" onclick="generatePrompt('levels-container', LevelsPrompts)">Random Level</button>
+
+    <a href="index.html">
+        <button>Go Back</button>
+    </a>
+    
+    <script>
+        // Arrays of sample prompts for each generator
+        const BodyPartPrompts = [
+        "Shoulder",
+            "Head",
+            "knee",
+            "Chest",
+            "Hips"
+            // Add more prompts as needed
+        ];
+
+        const ShapePrompts = [
+        "Circles",
+        "Rectangles",
+        "Triangles",
+        "Alphabets",
+        "Numbers"
+            // Add more prompts as needed
+        ];
+
+        const LevelsPrompts = [
+        "Ground",
+        "Standing",
+        "Bent Knees",
+        "High On Toes"
+            // Add more prompts as needed
+        ];
+
+
+        function generatePrompt(containerId, prompts) {
+            // Get a random prompt from the array
+            const randomIndex = Math.floor(Math.random() * prompts.length);
+            const randomPrompt = prompts[randomIndex];
+
+            // Display the random prompt in the HTML
+            const promptContainer = document.getElementById(containerId);
+            
+            // Clear previous content
+            promptContainer.innerHTML = '';
+
+            // Update with the new prompt
+            const promptElement = document.createElement('div');
+            promptElement.innerHTML = '<p><strong>Your Random Prompt:</strong></p>' + '<p>' + randomPrompt + '</p>';
+            promptContainer.appendChild(promptElement);
+        }
+    </script>
+</body>
+</html>
+
