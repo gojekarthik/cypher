@@ -102,4 +102,5 @@ a button{
 a button:hover{
     background-color: #322F34;
     color:#6767A4 ;
+    transform: scale(1.2);
 }

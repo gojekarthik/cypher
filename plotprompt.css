@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;500;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(to right, #9bc5c3, #6767A4);
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    margin: 20px;
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #6767A4;
+    ;
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+.prompt-container {
+    height: 50%;
+    width: 80%; /* Adjust width as needed */
+    padding: 5%;
+    margin: 10%; /* Push .prompt-container to the top of the .container */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: black;
+}
+
+.plot-cards {
+    height: 50vh;
+    width: 130vh;
+    display: flex;
+    margin: 10% 20% 10% 20%;
+    justify-content: center;
+}

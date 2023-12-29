@@ -4,23 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Random Prompt Generator</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="technicalprompt.css">
 </head>
 <body>
     <h1>Random Prompt Generator</h1>
-
-    <!-- Character Prompt Generator -->
-    <div class="prompt-container" id="bodypart-container"></div>
-    <button class="generate-button" onclick="generatePrompt('bodypart-container', BodyPartPrompts)">Random BodyPart</button>
-
-    <!-- Emotion Prompt Generator -->
-    <div class="prompt-container" id="shape-container"></div>
-    <button class="generate-button" onclick="generatePrompt('shape-container', ShapePrompts)">Random Shape</button>
-
-    <!-- Location Prompt Generator -->
-    <div class="prompt-container" id="levels-container"></div>
-    <button class="generate-button" onclick="generatePrompt('levels-container', LevelsPrompts)">Random Level</button>
-
+<div class="tech-cards">
+    <!-- Bodypart Prompt Generator -->
+    <div class="container">
+    <div class="prompt-container" id="bodypartresult-container"></div>
+    <button class="generate-button" onclick="generatePrompt('bodypartresult-container', BodyPartPrompts)">Random BodyPart</button>
+    </div>
+    <!-- Shape Prompt Generator -->
+    <div class="container">
+    <div class="prompt-container" id="shaperesult-container"></div>
+    <button class="generate-button" onclick="generatePrompt('shaperesult-container', ShapePrompts)">Random Shape</button>
+    </div>
+    <!-- Levels Prompt Generator -->
+    <div class="container">
+    <div class="prompt-container" id="levelsresult-container"></div>
+    <button class="generate-button" onclick="generatePrompt('levelsresult-container', LevelsPrompts)">Random Level</button>
+    </div>
+</div>
     <a href="index.html">
         <button>Go Back</button>
     </a>

@@ -4,27 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Random Prompt Generator</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="plotprompt.css">
 </head>
 <body>
     <h1>Random Prompt Generator</h1>
-
+<div class="plot-cards">
+    <div class="container">
     <!-- Character Prompt Generator -->
     <div class="prompt-container" id="character-container"></div>
     <button class="generate-button" onclick="generatePrompt('character-container', CharacterPrompts)">Generate Character</button>
-
+    </div>
+    <div class="container">
     <!-- Emotion Prompt Generator -->
     <div class="prompt-container" id="emotion-container"></div>
     <button class="generate-button" onclick="generatePrompt('emotion-container', EmotionPrompts)">Generate Emotion</button>
-
+    </div>
+    <div class="container">
     <!-- Location Prompt Generator -->
     <div class="prompt-container" id="location-container"></div>
     <button class="generate-button" onclick="generatePrompt('location-container', LocationPrompts)">Generate Location</button>
-
+    </div>
+    <div class="container">
     <!-- Action Prompt Generator -->
     <div class="prompt-container" id="action-container"></div>
     <button class="generate-button" onclick="generatePrompt('action-container', ActionPrompts)">Generate Action</button>
-    
+</div>
+</div>
     <a href="index.html">
         <button>Go Back</button>
     </a>
