@@ -64,8 +64,7 @@ body {
 .timer_ele_btn{
     border: none;
     border-radius: 50%;
-    background-color: #f2f2f2;
-    
+    background-color: #9bc5c3    
 }
 .timer_ele_btn:hover{
     background-color: #322F34;
@@ -86,4 +85,18 @@ body {
 .adjustments .timer_ele_btn{
     height: 50px;
     width: 50px;
+}
+
+.generate-button{
+ background-color: #9bc5c3;
+ height: 30px;
+ width: 180px;
+ border: none;
+ border-radius: 10px;
+}
+
+.generate-button:hover{
+    background-color: #322F34;
+    color: #f2f2f2;
+    transform: scale(1.2);
 }
