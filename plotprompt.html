@@ -6,6 +6,7 @@
     <title>Random Prompt Generator</title>
     <link rel="stylesheet" href="plotprompt.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 </head>
 <body>
 <h1>Random Prompt Generator</h1>
@@ -32,15 +33,23 @@
 </div>
 </div>
 <div class="timer">
-    <span class= "timer_ele timer_ele_txt timer_ele_minutes">00</span>
-    <span class="timer_ele timer_ele_text">:</span>
-    <span class= "timer_ele timer_ele_txt timer_ele_seconds">00</span>
+    <div class="adjustments">
+    <button class="timer_ele time_ele_adjust timer_ele_btn">
+        <span class="material-symbols-outlined">+1</span>
+    </button>
+    <span class= "timer_ele time_ele_ajust timer_ele_txt timer_ele_minutes">00:00</span>
+    <button class="timer_ele time_ele_adjust timer_ele_btn">
+        <span class="material-symbols-outlined">-1</span>
+    </button>
+</div>
+<div class="controls">
     <button class="timer_ele timer_ele_btn timer_ele_btn_play">
         <span class="material-symbols-outlined">play_arrow</span>
     </button>
     <button class="timer_ele timer_ele_btn timer_ele_btn_reset">
         <span class="material-symbols-outlined">timer</span>
     </button>
+</div>
 </div>
 <a href="index.html">
         <button>Go Back</button>
