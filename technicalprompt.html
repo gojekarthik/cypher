@@ -5,76 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Random Prompt Generator</title>
     <link rel="stylesheet" href="technicalprompt.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
     <h1>Random Prompt Generator</h1>
-<div class="tech-cards">
-    <!-- Bodypart Prompt Generator -->
-    <div class="container">
-    <div class="prompt-container" id="bodypartresult-container"></div>
-    <button class="generate-button" onclick="generatePrompt('bodypartresult-container', BodyPartPrompts)">Random BodyPart</button>
+    <div class="tech-cards">
+        <!-- Bodypart Prompt Generator -->
+        <div class="container">
+            <div class="prompt-container" id="bodypartresult-container"></div>
+            <button class="generate-button" onclick="generatePrompt('bodypartresult-container', BodyPartPrompts)">Random BodyPart</button>
+        </div>
+        <!-- Shape Prompt Generator -->
+        <div class="container">
+            <div class="prompt-container" id="shaperesult-container"></div>
+            <button class="generate-button" onclick="generatePrompt('shaperesult-container', ShapePrompts)">Random Shape</button>
+        </div>
+        <!-- Levels Prompt Generator -->
+        <div class="container">
+            <div class="prompt-container" id="levelsresult-container"></div>
+            <button class="generate-button" onclick="generatePrompt('levelsresult-container', LevelsPrompts)">Random Level</button>
+        </div>
     </div>
-    <!-- Shape Prompt Generator -->
-    <div class="container">
-    <div class="prompt-container" id="shaperesult-container"></div>
-    <button class="generate-button" onclick="generatePrompt('shaperesult-container', ShapePrompts)">Random Shape</button>
+    <div class="timer">
+        <span class= "timer_ele timer_ele_txt timer_ele_minutes" id="countdown">00:00</span>
+        <!-- <span class="timer_ele timer_ele_text">:</span>
+        <span class= "timer_ele timer_ele_txt timer_ele_seconds">00</span> -->
+        <button class="timer_ele timer_ele_btn timer_ele_btn_play">
+            <span class="material-symbols-outlined">play_arrow</span>
+        </button>
+        <button class="timer_ele timer_ele_btn timer_ele_btn_reset">
+            <span class="material-symbols-outlined">timer</span>
+        </button>
     </div>
-    <!-- Levels Prompt Generator -->
-    <div class="container">
-    <div class="prompt-container" id="levelsresult-container"></div>
-    <button class="generate-button" onclick="generatePrompt('levelsresult-container', LevelsPrompts)">Random Level</button>
-    </div>
-</div>
     <a href="index.html">
         <button>Go Back</button>
     </a>
-
-    <script>
-        // Arrays of sample prompts for each generator
-        const BodyPartPrompts = [
-        "Shoulder",
-            "Head",
-            "knee",
-            "Chest",
-            "Hips"
-            // Add more prompts as needed
-        ];
-
-        const ShapePrompts = [
-        "Circles",
-        "Rectangles",
-        "Triangles",
-        "Alphabets",
-        "Numbers"
-            // Add more prompts as needed
-        ];
-
-        const LevelsPrompts = [
-        "Ground",
-        "Standing",
-        "Bent Knees",
-        "High On Toes"
-            // Add more prompts as needed
-        ];
-
-
-        function generatePrompt(containerId, prompts) {
-            // Get a random prompt from the array
-            const randomIndex = Math.floor(Math.random() * prompts.length);
-            const randomPrompt = prompts[randomIndex];
-
-            // Display the random prompt in the HTML
-            const promptContainer = document.getElementById(containerId);
-            
-            // Clear previous content
-            promptContainer.innerHTML = '';
-
-            // Update with the new prompt
-            const promptElement = document.createElement('div');
-            promptElement.innerHTML = '<p><strong>Your Random Prompt:</strong></p>' + '<p>' + randomPrompt + '</p>';
-            promptContainer.appendChild(promptElement);
-        }
-    </script>
+    <script src="prompt.js"></script>
+    <script src="timer.js"></script>
 </body>
 </html>
-
