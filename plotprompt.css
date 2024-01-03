@@ -54,14 +54,11 @@ body {
     font-weight: bold;
 }
 
-.timer_ele{
+.timer_ele_btn{
     height: 70px;
     width: 70px;
     justify-content: center;
     align-items: center;
-}
-
-.timer_ele_btn{
     border: none;
     border-radius: 50%;
     background-color: #9bc5c3    
@@ -99,4 +96,7 @@ body {
     background-color: #322F34;
     color: #f2f2f2;
     transform: scale(1.2);
+}
+.timer_txt{
+    padding: 0px 23px 0 23px;
 }
