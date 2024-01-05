@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Random Prompt Generator</title>
     <link rel="stylesheet" href="technicalprompt.css">
+    <script src="https://kit.fontawesome.com/3d9d92b6e6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="timer.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
@@ -26,25 +28,53 @@
             <button class="generate-button" onclick="generatePrompt('levelsresult-container', LevelsPrompts)">Random Level</button>
         </div>
     </div>
-    <div class="timer">
-        <div class="adjustments">
-        <button class="timer_ele time_ele_adjust timer_ele_btn">
-            <span class="material-symbols-outlined">+1</span>
-        </button>
-        <span class= "timer_ele time_ele_ajust timer_ele_txt timer_ele_minutes">00:00</span>
-        <button class="timer_ele time_ele_adjust timer_ele_btn">
-            <span class="material-symbols-outlined">-1</span>
-        </button>
+<!-- Pomodoro Container -->
+<div class="pomodoro-container">
+
+    <!-- Session -->
+    <div class="pomodoro-item">
+        <div id="labelSessionBreak" class="label">Session</div>
+        <div class="row-pomodoro">
+            <div id="timeLeft">25:00</div>
         </div>
-    <div class="controls">
-        <button class="timer_ele timer_ele_btn timer_ele_btn_play">
-            <span class="material-symbols-outlined">play_arrow</span>
-        </button>
-        <button class="timer_ele timer_ele_btn timer_ele_btn_reset">
-            <span class="material-symbols-outlined">timer</span>
-        </button>
     </div>
+
+    <!-- Session Length -->
+    <div class="pomodoro-item">
+        <div class="label">Session Length</div>
+        <div class="row-pomodoro">
+            <button id="sessionDecrement" class="btn-updown">-</button>
+            <div id="sessionLength" class="row-pomodoro lengthTime">25</div>
+            <button id="sessionIncrement" class="btn-updown">+</button>
+        </div>
     </div>
+
+    <!-- Break Length -->
+    <div class="pomodoro-item">
+        <div class="label">Break Length</div>
+        <div class="row-pomodoro">
+            <button id="breakDecrement" class="btn-updown">-</button>
+            <div id="breakLength" class="row-pomodoro lengthTime">5</div>
+            <button id="breakIncrement" class="btn-updown">+</button>
+        </div>
+    </div>
+    
+    <!-- Play/Pause/Reset -->
+    <div class="pomodoro-item playerButton">
+        <div class="row-pomodoro buttonRow">
+            <button id="buttonPlay" class="btn-controller">
+                <i id="playIcon" class="fas fa-play" aria-hidden="true"></i>
+            </button>
+            <button id="buttonReset" class="btn-controller"> 
+                <i class="fas fa-sync" aria-hidden="true"></i>
+            </button>
+        </div>
+    </div>
+  
+</div>
+
+<!-- Sound -->
+<audio id="beep" src="https://www.soundjay.com/misc/sounds/bell-ringing-05.mp3"></audio>
     <a href="index.html">
         <button>Go Back</button>
     </a>
